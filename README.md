@@ -1,2 +1,2 @@
 # Mysql_Study
-Mysql 연습
+Mysql 공부
