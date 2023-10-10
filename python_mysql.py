@@ -1,4 +1,6 @@
-import pymysql
+import pymysql, os
+
+pw = pw
 
 def get_cursor():
     db = pymysql.connect(
