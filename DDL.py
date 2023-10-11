@@ -1,10 +1,10 @@
 import python_mysql
 import pandas as pd
 
-# create, alter, drop
-
 # mysql 연결
 cursor = python_mysql.get_cursor()
+
+# create, alter, drop
 
 # 쿼리 정의
 # CREATE
@@ -46,7 +46,8 @@ use_db_sql = "use test"
 desc_table_sql = "desc test"
 
 # execute를 통해 쿼리를 실행함.
-cursor.execute(use_db_sql)
+sql = ''
+cursor.execute(sql)
 
 # 실행된 쿼리의 결과를 가져옴
 result = cursor.fetchall()
