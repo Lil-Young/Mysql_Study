@@ -1,5 +1,4 @@
 import python_mysql
-import pymysql
 import pandas as pd
 
 # create, alter, drop, rename
