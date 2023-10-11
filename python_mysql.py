@@ -2,7 +2,8 @@ import pymysql
 import dotenv, os
 
 dotenv_file = dotenv.find_dotenv()
-print(dotenv)
+dotenv.load_dotenv(dotenv_file)
+
 pw = os.environ['pw']
 
 def get_cursor():
