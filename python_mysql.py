@@ -1,13 +1,14 @@
-import pymysql, os
+import pymysql
+import dotenv, os
 
-pw = pw
+pw = os.environ['pw']
 
 def get_cursor():
     db = pymysql.connect(
         host='localhost',
         port=3306,
         user='root',
-        passwd='1111',
+        passwd=pw,
         db='ecommerce',
         charset='utf8'
     )
