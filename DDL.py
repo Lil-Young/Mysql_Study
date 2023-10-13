@@ -46,11 +46,11 @@ use_db_sql = "use test"
 desc_table_sql = "desc test"
 
 # execute를 통해 쿼리를 실행함.
-sql = ''
+sql = 'show databases'
 cursor.execute(sql)
-
-# 실행된 쿼리의 결과를 가져옴
-result = cursor.fetchall()
-print(result)
-a = pd.DataFrame(result) # 데이터프레임으로 변환함.
-print(a)
+print(sql)
+# # 실행된 쿼리의 결과를 가져옴
+# result = cursor.fetchall()
+# print(result)
+# a = pd.DataFrame(result) # 데이터프레임으로 변환함.
+# print(a)
